@@ -1,0 +1,27 @@
+/* syntax */
+/*  p {color: value;} */
+/* in general
+
+    selector {property : Value;}
+
+*/
+
+/* 
+for class :- .classname
+for id :-  #idName
+
+*/
+
+
+/* to set multiple properties */
+
+/* 
+
+header, p.intro {
+
+        property : value ;
+
+}
+
+
+*/
