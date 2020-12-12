@@ -17,20 +17,37 @@
             border-color: green;
             border-style: dashed;
             border-radius: 25px;
+            border-top: 2px dashed gold;
         }
 
         #para3 {
+            /* used minimum space */
             width: fit-content;
             border : 2px dashed red ;
             border-radius: 20px;
         }
+
+        #para4 {
+            height: 400px;
+            width: 400px;
+            background-image: url('ravi.png');
+            /* to make it non repeative */
+            background-repeat: no-repeat;
+            /* to align the image */
+            /* we can write here the position such as bottom right, center center */
+            background-position: center ;
+            border: 4px dashed red;
+            border-radius: 15px;
+
+        }
     </style>
 </head>
 <body>
-    <h2>this is heading</h2>
+    <h2>height, width, background and borders</h2>
     <p id="para1">this is a paragraph</p>
     <p id="para2">this is a paragraph</p>
     <p id="para3">this is a paragraph which is created to explain the border CSS. .</p>
+    <p id="para4">this is fourth paragraph</p>
     
 </body>
 </html>

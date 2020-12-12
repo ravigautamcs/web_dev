@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        * {
+            /* these values will be initial set */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0%;
+
+        }
+
+        body {
+            background-color: sandybrown;
+        }
+
+        .container {
+            background-color: rgb(221, 197, 90);
+            border: 3px dashed rgb(16, 211, 32);
+            border-radius: 15px;
+            padding: 19px 30px;
+            margin: 30px;
+            box-sizing: content-box; /*this adjusts its width according to padding*/
+            
+        }
+        #second {
+            /* all these things can be applied from all the sides */
+            padding: 20px top;
+            border: 3px dashed red;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 40px;
+        }
+
+        #third {
+            /* to give padding same in left/right and top/bottom */
+            padding: 20px 30px; /*this is for left/right and top/bottom respectively */
+        }
+    </style>
+</head>
+<body>
+    <h2>Box model, margin, padding in CSS</h2>
+    <div class="container">
+        <h3>this is heading</h3>
+        <h4>content---->padding------>border------>margin</h4>
+        <h4>Universal selector :- <br>
+            * {<br>
+                property: value ; <br>
+                /*these properties will be applied to all the elements this is used to rest the all css values while creating website*/
+            <br> }
+        </h4>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur cupiditate et accusamus. Quisquam temporibus soluta cumque, ut nisi molestiae voluptatem voluptas quo!</p>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur cupiditate et accusamus. Quisquam temporibus soluta cumque, ut nisi molestiae voluptatem voluptas quo!</p>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur cupiditate et accusamus. Quisquam temporibus soluta cumque, ut nisi molestiae voluptatem voluptas quo!</p>
+    </div>
+</body>
+</html>
