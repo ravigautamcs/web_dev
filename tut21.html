@@ -7,41 +7,64 @@
     <title>alingnment</title>
     <style>
         * {
-            margin-top: ;
+            margin-top: 10px;
+            box-sizing: border-b48;
+        }
+
+        body {
+            background-color: rgb(197, 197, 247);
         }
 
         .container {
-            border: 3px solid gray;
-            height: auto;
-            border-radius: 20px;
-            margin: 40px;
-            padding: auto;
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+            font-family: cursive;
+            background-color: rgb(120, 238, 105);
 
         }
 
+        h2 {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
         .items {
-            border: 3px dashed gray;
+            border: 2px solid gray;
             margin: 12px 3px;
             padding: 12px 3px;
-            background: pink;
-            border-radius: 15px;
-            font-family: cursive;
+            background-color: rgb(223, 163, 163);
+
         }
 
         #fruits {
             float: left;
-            width: 50%;
+            width: 48%;
 
         }
 
         #Computer {
             float: left;
-            width: 50%;
+            width: 48%;
         }
 
         #stationary {
-            float: left;
-            width: 50%;
+            /* float: left; */
+            /*ab overlapping ho gyi*/
+            clear: left;
+            /*this will ensure that ki koi bhi float left element isko preshan na kre ya overlap na kre*/
+            width: 98%;
+        }
+
+        #Books {
+            clear: left;
+            width: 98%;
+        }
+
+        p,
+        h3 {
+            text-align: center;
+            /* text-align: justify; this will completley fill the box with text */
         }
     </style>
 </head>
@@ -53,23 +76,38 @@
             <h3>Fruits</h3>
             <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi fuga
                 quis cupiditate voluptate eos ullam, facere quia qui ipsum? In accusantium esse explicabo beatae illo,
-                repudiandae eum optio est.</p>
+                repudiandae eum optio est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum eius esse
+                consequuntur labore veniam deserunt iste, odit ipsam. Exercitationem vitae beatae animi similique,
+                temporibus eum architecto consectetur velit voluptatum nam doloremque repellendus sed quam?</p>
         </div>
 
         <div id="Computer" class="items">
             <h3>Computer</h3>
             <p id="Computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi fuga
                 quis cupiditate voluptate eos ullam, facere quia qui ipsum? In accusantium esse explicabo beatae illo,
-                repudiandae eum optio est.</p>
+                repudiandae eum optio est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus quos
+                corrupti dignissimos sit quaerat, nemo magnam, distinctio eveniet dolorem placeat, illum officiis. Esse
+                maiores quia ducimus laboriosam nulla provident, hic qui voluptatem omnis.</p>
         </div>
 
         <div id="stationary" class="items">
             <h3>stationary</h3>
             <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi fuga
                 quis cupiditate voluptate eos ullam, facere quia qui ipsum? In accusantium esse explicabo beatae illo,
-                repudiandae eum optio est.</p>
+                repudiandae eum optio est. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolorum,
+                obcaecati, deleniti harum at laboriosam molestias reiciendis reprehenderit odit incidunt quos. Explicabo
+                earum vitae quisquam, non obcaecati suscipit doloremque harum adipisci alias maiores ab.</p>
+        </div>
+        <div id="Books" class="items">
+            <h3>Books</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi fuga
+                quis cupiditate voluptate eos ullam, facere quia qui ipsum? In accusantium esse explicabo beatae illo,
+                repudiandae eum optio est. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat dolorum,
+                obcaecati, deleniti harum at laboriosam molestias reiciendis reprehenderit odit incidunt quos. Explicabo
+                earum vitae quisquam, non obcaecati suscipit doloremque harum adipisci alias maiores ab.</p>
 
         </div>
+    </div>
 </body>
 
 </html>
