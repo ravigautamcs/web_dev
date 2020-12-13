@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling links and buttons</title>
+    <style>
+        .container{
+            border: 3px solid rgb(39, 39, 131);
+            border-radius: 15px;
+            background-color: rgb(238, 192, 123);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 34px;
+            margin: auto;
+            width: 800px;
+            
+            text-align: none;
+        }
+        .btn {
+            background-color: rgb(110, 228, 32);
+            padding: 6px;
+            border: none;
+            /* when we hover on it */
+            cursor: pointer;
+            border-radius: 10px;
+            color: black;
+
+        }
+        a{
+            /* to remove default decoration from the text */
+            text-decoration: none; 
+        }
+        a:hover{
+            /* heere we can change the properties of the button while we hover on it */
+            color: rgb(68, 184, 219);
+        }
+        a:visited{
+            color: red;
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2 >Styling links and buttons</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolores quidem cumque in, ullam eaque quos sint provident, magnam dolorem, sapiente officia vero modi. Voluptate culpa, quis dolores nihil excepturi corporis atque ipsam voluptatibus nam vel quisquam illum sit reiciendis rerum cumque, sint facere itaque porro debitis ad animi tempora!
+        </p>
+
+        <!-- to add the button of Read  More  -->
+        <a href="https://www.google.com/" class="btn" target="_blank">Read More..</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
