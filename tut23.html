@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        .navbar {
+            background-color: rgb(196, 225, 65);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .navbar ul li {
+            float: left;
+            /*by doing this the bg color will disappear bcoz it makes the item to overflow*/
+            list-style: none;
+            margin: 10px 20px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            padding: 3px;
+            color: rgb(78, 20, 236);
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+
+            color: rgb(247, 14, 14);
+            text-decoration: none;
+        }
+
+        .navbar ul div {
+            margin: 10px 1150px;
+        }
+
+        /* .navbar ul div2{
+            margin: 10px 100px ;
+        } */
+        .navbar input {
+            border-radius: 10px;
+            padding: 2px 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Creating a nevigation menu</h2>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Items</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Contact us</a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search on this Website">
+                    <!-- <div2 class="search">Search</div2> -->
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
